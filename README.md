@@ -14,18 +14,6 @@
 - Trunk Based Developement(TBD)([링크](https://trunkbaseddevelopment.com/trunk1c.png))를 채택합니다.
 ![이미지](https://trunkbaseddevelopment.com/trunk1c.png)
 
-### Feature Flag
-- 피쳐플래그 예시 보러 가기
-
-# Layer
-```mermaid
-flowchart TD
-  App --> Feature
-  Feature --> Domain
-  Domain --> Core
-  Core ~~~ Shared
-```
-
 
 # 아키텍처
 ### Clean Architecture
@@ -65,6 +53,15 @@ flowchart TD
   FeatureTests --> FeatureTesting
   FeatureTesting --> FeatureInterface
   
+```
+
+# Layer
+```mermaid
+flowchart TD
+  App --> Feature
+  Feature --> Domain
+  Domain --> Core
+  Core ~~~ Shared
 ```
 
 # CI/CD
