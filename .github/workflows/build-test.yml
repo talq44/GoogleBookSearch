@@ -58,7 +58,7 @@ jobs:
         export PATH="$HOME/.local/bin:$HOME/.local/share/mise/plugins/tuist/bin:$PATH"
         eval "$(~/.local/bin/mise activate bash)"
 
-        tuist build
+        tuist build --device "iPhone 14 Pro"
 
     - name: Tuist Test
       if: ${{ vars.TUIST_TEST_ON_OFF == 'true' }}
@@ -66,4 +66,4 @@ jobs:
         export PATH="$HOME/.local/bin:$HOME/.local/share/mise/plugins/tuist/bin:$PATH"
         eval "$(~/.local/bin/mise activate bash)"
 
-        tuist test
+        tuist test --device "iPhone 14 Pro"
