@@ -5,10 +5,9 @@ import SearchListDomainInterface
 final class SearchListUseCaseImpl: SearchListUseCase {
     private enum Constants {
         static let perPage: Int = 30
-        static let usernameRegex = "^[A-Za-zÀ-ÖØ-öø-ÿ\\p{L}\\p{M}'\\-\\s]+$"
     }
     
-    private var page: Int = 0
+    private var page: Int = -1
     private var totalCount: Int = 1
     
     private let repository: SearchListRepository
@@ -28,23 +27,22 @@ final class SearchListUseCaseImpl: SearchListUseCase {
         
         switch input.isMore {
         case false:
-            page = 1
+            page = 0
         case true:
-            guard page > 0 else {
+            guard page >= 0 else {
                 return .failure(.fetchRequiredBeforeMore)
             }
             page += 1
         }
         
-        guard self.totalCount > (page - 1) * Constants.perPage else {
+        guard self.totalCount > page * Constants.perPage else {
             return .success(SearchListOutputImpl(items: []))
         }
         
         let request = SearchListRequestImpl(
             query: input.query,
             page: page,
-            perPage: Constants.perPage,
-            token: ""
+            perPage: Constants.perPage
         )
         
         let response = await self.repository.fetch(request)
@@ -64,33 +62,11 @@ final class SearchListUseCaseImpl: SearchListUseCase {
     
     private func checkQuery(query: String) -> Bool {
         // 검색어 종류는 사용자 이름으로 제한합니다.
-        // 1. 빈값이면 바로 빈값 반환
+        // 빈값이면 바로 빈값 반환
         guard query.count > 0 else {
             return false
         }
         
-        // 표준적인 정규식 추가
-        guard self.checkNameRegex(query: query) else {
-            return false
-        }
-        
-        return true
-    }
-    
-    private func checkNameRegex(query: String) -> Bool {
-        // 소문자로 변환 (선택사항)
-        let sanitizedQuery = query.lowercased()
-
-        // 정규식 검사
-        let predicate = NSPredicate(
-            format: "SELF MATCHES %@",
-            Constants.usernameRegex
-        )
-        
-        guard predicate.evaluate(with: sanitizedQuery) else {
-            return false
-        }
-
         return true
     }
 }
