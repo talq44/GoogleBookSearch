@@ -20,7 +20,7 @@ jobs:
         curl https://mise.jdx.dev/install.sh | sh
         
         # Update PATH for CI environment
-        export PATH="$HOME/.local/bin:$HOME/.local/share/mise/shims:$PATH"
+        export PATH="$HOME/.local/bin"
         
         # Activate mise for the current shell
         eval "$(~/.local/bin/mise activate bash)"
@@ -31,7 +31,7 @@ jobs:
     - name: Install Tuist CLI  
       run: |
         # Re-export PATH and activate mise in this step
-        export PATH="$HOME/.local/bin:$HOME/.local/share/mise/shims:$HOME/.local/share/mise/plugins/tuist/bin:$PATH"
+        export PATH="$HOME/.local/bin:$HOME/.local/share/mise/plugins/tuist/bin:$PATH"
         eval "$(~/.local/bin/mise activate bash)"
         
         # Install Tuist
@@ -41,21 +41,21 @@ jobs:
 
     - name: Tuist clean
       run: |        
-        export PATH="$HOME/.local/bin:$HOME/.local/share/mise/shims:$HOME/.local/share/mise/plugins/tuist/bin:$PATH"
+        export PATH="$HOME/.local/bin:$HOME/.local/share/mise/plugins/tuist/bin:$PATH"
         eval "$(~/.local/bin/mise activate bash)"
 
         tuist clean
 
     - name: Tuist install
       run: |
-        export PATH="$HOME/.local/bin:$HOME/.local/share/mise/shims:$HOME/.local/share/mise/plugins/tuist/bin:$PATH"
+        export PATH="$HOME/.local/bin:$HOME/.local/share/mise/plugins/tuist/bin:$PATH"
         eval "$(~/.local/bin/mise activate bash)"
 
         tuist install
     
     - name: Tuist build
       run: |
-        export PATH="$HOME/.local/bin:$HOME/.local/share/mise/shims:$HOME/.local/share/mise/plugins/tuist/bin:$PATH"
+        export PATH="$HOME/.local/bin:$HOME/.local/share/mise/plugins/tuist/bin:$PATH"
         eval "$(~/.local/bin/mise activate bash)"
 
         tuist build
@@ -63,7 +63,7 @@ jobs:
     - name: Tuist Test
       if: ${{ vars.TUIST_TEST_ON_OFF == 'true' }}
       run: |
-        export PATH="$HOME/.local/bin:$HOME/.local/share/mise/shims:$HOME/.local/share/mise/plugins/tuist/bin:$PATH"
+        export PATH="$HOME/.local/bin:$HOME/.local/share/mise/plugins/tuist/bin:$PATH"
         eval "$(~/.local/bin/mise activate bash)"
 
         tuist test
