@@ -12,7 +12,9 @@ import UserAPICoreInterface
 import Moya
 
 public enum API {
-    case get_search_users(header: SearchHeaderDTO, request: SearchRequestDTO)
+    case health_check
+    case get_books_volumes(request: GetBooksRequestDTO)
+    case get_books_volumes_detail(request: GetBooksDetailReqeustDTO)
 }
 
 extension API: Moya.TargetType {

@@ -10,11 +10,12 @@ import Foundation
 extension API {
     public var headers: [String : String]? {
         switch self {
-        case let .get_search_users(header, _):
-            return [
-                "Accept": "application/vnd.github+json",
-                "Authorization": "Bearer \(header.token)"
-            ]
+        case .health_check:
+            return [:]
+        case .get_books_volumes:
+            return [:]
+        case .get_books_volumes_detail:
+            return [:]
         }
     }
 }
