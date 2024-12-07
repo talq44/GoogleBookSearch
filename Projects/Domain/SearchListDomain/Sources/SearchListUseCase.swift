@@ -40,7 +40,7 @@ final class SearchListUseCaseImpl: SearchListUseCase {
         }
         
         let request = SearchListRequestImpl(
-            query: input.query,
+            query: "intitle:\(input.query)",
             page: page,
             perPage: Constants.perPage
         )
