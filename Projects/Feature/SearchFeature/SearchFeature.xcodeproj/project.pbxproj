@@ -1,0 +1,1658 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000EF7459BA12F2ED2D525AC /* FakeSearchListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A573EAC93EEDBFE3F7E3AE2A /* FakeSearchListUseCase.swift */; };
+		00A5DA44940144CBF2F180F9 /* libReactiveXShared.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 077648186B9120A3104EB40E /* libReactiveXShared.a */; };
+		0678AD0ACCAE2DFDCA95AEE1 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF7EFB9175B20D2B6ECD20F /* RxSwift.framework */; };
+		073C628320B668B846A9C204 /* RxSwift_RxRelay.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = F1CF1DEB5F9AAB73E254D338 /* RxSwift_RxRelay.bundle */; };
+		07C193B06B10D20BCBB8BC17 /* UserAPICoreInterface.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7593385E1916CB19077C1D5B /* UserAPICoreInterface.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0A62818CB9AA0A802CC00D2C /* libSearchListDomainInterface.a in Dependencies */ = {isa = PBXBuildFile; fileRef = 795ED90CAFDFA6131FB97981 /* libSearchListDomainInterface.a */; };
+		0B1B01C0C2D88C94ADDDFE93 /* libSearchListDomainInterface.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 795ED90CAFDFA6131FB97981 /* libSearchListDomainInterface.a */; };
+		104021D61F340ADBCBA0AA4D /* SearchViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28494B38AFC8CC7DEBF42A50 /* SearchViewItem.swift */; };
+		10C8DE74BB8425DEC310385C /* Fakery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFAF11D494D1851C0B433FA6 /* Fakery.framework */; };
+		12785541B68BEAE6A10ECD14 /* RxCocoaRuntime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F391BBC6B75FC3D756C74726 /* RxCocoaRuntime.framework */; };
+		1294FC94AD2F559331C1938A /* libDesignSystem.a in Dependencies */ = {isa = PBXBuildFile; fileRef = 50204C2E21C36CC54CC36FF6 /* libDesignSystem.a */; };
+		156811D6B9B39BA05BBFABB5 /* Testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1F6AB501C5B59C363924F9 /* Testing.swift */; };
+		161C4B68A8BEFE39D8E5ADCD /* libSearchListDomain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC491CDE9C509C4A5FCBEA96 /* libSearchListDomain.a */; };
+		1AFA5DA9AAC8BE464CDEA857 /* Fakery.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = FFAF11D494D1851C0B433FA6 /* Fakery.framework */; };
+		1C648259FD7643E3CC0D4277 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF7EFB9175B20D2B6ECD20F /* RxSwift.framework */; };
+		26F0D1D47352FF9E07678109 /* SnapKit_SnapKit.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = 3228F6E30EFDCA9A68079EC3 /* SnapKit_SnapKit.bundle */; };
+		298F2E6FF9FA7004C06969B6 /* libSearchFeatureTesting.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AC61FC13B6FA4A2C706179C /* libSearchFeatureTesting.a */; };
+		2E37C062CE96BD910E16DE00 /* libReactiveXShared.a in Dependencies */ = {isa = PBXBuildFile; fileRef = 077648186B9120A3104EB40E /* libReactiveXShared.a */; };
+		3078AF5349F10C370E32394A /* Alamofire_Alamofire.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = CA876BF3539520274159B5F8 /* Alamofire_Alamofire.bundle */; };
+		3202610D00E03D3E9E447924 /* Fakery_Fakery.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = A2F7237B8CBCE6724B10B165 /* Fakery_Fakery.bundle */; };
+		376EC848075F1D164B01E0D1 /* Fakery_Fakery.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A2F7237B8CBCE6724B10B165 /* Fakery_Fakery.bundle */; };
+		3C1FF6FE14E581693F60D0EC /* libSearchFeatureInterface.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C72D86AD6A2B5499FE5EC13 /* libSearchFeatureInterface.a */; };
+		3D47A193FD46CEF67B688EE5 /* libSearchFeatureTesting.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AC61FC13B6FA4A2C706179C /* libSearchFeatureTesting.a */; };
+		426C544B207E580F0E556A5A /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6740FDFAA2502136A9247EE9 /* RxRelay.framework */; };
+		452F8BF4AEE1C9F0E8B6024B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF8DBCF7983D98D2D6343D6 /* SearchViewController.swift */; };
+		49F5773E4EB6470A3348777C /* RxSwift_RxRelay.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = F1CF1DEB5F9AAB73E254D338 /* RxSwift_RxRelay.bundle */; };
+		4E33FB6B7177B36AE93777B4 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE2E39E38DA7A00AE57A98C /* RxCocoa.framework */; };
+		536FF15042825C4ABD25A116 /* libDesignSystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50204C2E21C36CC54CC36FF6 /* libDesignSystem.a */; };
+		5725F80298431F56F9285906 /* RxSwift_RxCocoa.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F8AB81514D41762A46963759 /* RxSwift_RxCocoa.bundle */; };
+		572A15525962C745989DDE6F /* libSearchFeatureInterface.a in Dependencies */ = {isa = PBXBuildFile; fileRef = 9C72D86AD6A2B5499FE5EC13 /* libSearchFeatureInterface.a */; };
+		582EF96B7CD6E41C7C8589F3 /* RxSwift_RxCocoa.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F8AB81514D41762A46963759 /* RxSwift_RxCocoa.bundle */; };
+		58E33128B3DB4304526B3A18 /* libDesignSystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50204C2E21C36CC54CC36FF6 /* libDesignSystem.a */; };
+		595B2FBEEEF50AD2BC89E826 /* libSearchFeature.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA55783AEC13420C76677B53 /* libSearchFeature.a */; };
+		5AA303FEB46EB305F81915A7 /* SearchViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035A6D81324361D8F02D57D4 /* SearchViewState.swift */; };
+		5ACB04072B6DEB3931F35C71 /* libDesignSystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50204C2E21C36CC54CC36FF6 /* libDesignSystem.a */; };
+		5E2C8D772DCD30E6503EF76A /* SnapKit_SnapKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3228F6E30EFDCA9A68079EC3 /* SnapKit_SnapKit.bundle */; };
+		5E92F8AD9D07F2C296B68A3A /* Swinject.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 176105C9CB2F699E77D1D583 /* Swinject.framework */; };
+		609177755A177B5678CDE943 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CC6DFC31050415DD2E27598 /* Moya.framework */; };
+		639E3ADA8C5142289521A67D /* RxSwift_RxCocoa.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = F8AB81514D41762A46963759 /* RxSwift_RxCocoa.bundle */; };
+		663AAC92A294CCF770777582 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6740FDFAA2502136A9247EE9 /* RxRelay.framework */; };
+		66E38B9B3172D749E51E52FB /* RxSwift_RxRelay.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F1CF1DEB5F9AAB73E254D338 /* RxSwift_RxRelay.bundle */; };
+		68D5772733E3DCFB712730F7 /* RxCocoaRuntime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F391BBC6B75FC3D756C74726 /* RxCocoaRuntime.framework */; };
+		6B9D4F2F36767A65D9E66584 /* libSearchFeature.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA55783AEC13420C76677B53 /* libSearchFeature.a */; };
+		6C29472C5877383ED20821A7 /* libSearchFeatureInterface.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C72D86AD6A2B5499FE5EC13 /* libSearchFeatureInterface.a */; };
+		6E6968284B9897EFC3E1D365 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054C16AF22E0491258B9565B /* SnapKit.framework */; };
+		742A651AD58B8A2D4B0FF7A9 /* ReactorKitRuntime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 982C9AF1C526CB385B169E10 /* ReactorKitRuntime.framework */; };
+		74B3AF0E7A0E57D6C10972EA /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054C16AF22E0491258B9565B /* SnapKit.framework */; };
+		7757247F46A26A8B14125A41 /* RxSwift_RxCocoaRuntime.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = 9370F432A82903D9B2E090EF /* RxSwift_RxCocoaRuntime.bundle */; };
+		799E535867F836BE206281F0 /* SearchViewMutation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668A85CE5EEAC29039CD0C1B /* SearchViewMutation.swift */; };
+		7B5EF81FBCDA8EB088024471 /* UserAPICoreInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7593385E1916CB19077C1D5B /* UserAPICoreInterface.framework */; };
+		7B9CF671E012C1B105213ECD /* ReactorKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81080C3ECAD261A176040886 /* ReactorKit.framework */; };
+		7CC295C8D498B5D9F0BE5837 /* SnapKit_SnapKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3228F6E30EFDCA9A68079EC3 /* SnapKit_SnapKit.bundle */; };
+		7DD2102BC5988A14E27E9A3C /* SnapKit.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 054C16AF22E0491258B9565B /* SnapKit.framework */; };
+		7FB4A6DDC0770D9B6A2A8AE4 /* ReactorKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81080C3ECAD261A176040886 /* ReactorKit.framework */; };
+		80634C546F4C54A86A1D8700 /* libReactiveXShared.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 077648186B9120A3104EB40E /* libReactiveXShared.a */; };
+		81B9DE05915C45FE2952CB2E /* RxSwift_RxCocoa.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = F8AB81514D41762A46963759 /* RxSwift_RxCocoa.bundle */; };
+		836DE7C0117E0307C7C723A4 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE2E39E38DA7A00AE57A98C /* RxCocoa.framework */; };
+		84EC3DB50EC386491F48CC0F /* libFoundationShared.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE6DB10CAE5EAEA7227BB892 /* libFoundationShared.a */; };
+		859D06C35DFA69821A59B385 /* WeakMapTable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EF4DA1CBE0F67A5DCABEAF5 /* WeakMapTable.framework */; };
+		8611D4C73F048AB454677031 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8EB3F75C8DC97B033801563 /* LaunchScreen.storyboard */; };
+		8A07BA0FF051F187F3A01319 /* Fakery_Fakery.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = A2F7237B8CBCE6724B10B165 /* Fakery_Fakery.bundle */; };
+		8D0790BC34429966DD5AA624 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054C16AF22E0491258B9565B /* SnapKit.framework */; };
+		8D15C4B763F063BB638CBDA9 /* ReactorKitRuntime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 982C9AF1C526CB385B169E10 /* ReactorKitRuntime.framework */; };
+		91F1F9E685E9738239B66F30 /* RxCocoaRuntime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F391BBC6B75FC3D756C74726 /* RxCocoaRuntime.framework */; };
+		9337A804F232B03057ECA340 /* SearchViewMutation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668A85CE5EEAC29039CD0C1B /* SearchViewMutation.swift */; };
+		953B57E0D0473C8BFB36449D /* RxSwift_RxRelay.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F1CF1DEB5F9AAB73E254D338 /* RxSwift_RxRelay.bundle */; };
+		955E959D458291EBEAFDD885 /* WeakMapTable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EF4DA1CBE0F67A5DCABEAF5 /* WeakMapTable.framework */; };
+		97ACA20F320BFFA021667E6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5DCDD14C117C2D237596DD /* AppDelegate.swift */; };
+		99DEA110BF00885BA26CAF25 /* SearchFeatureOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CAFE114978F47740FD2D0F /* SearchFeatureOutput.swift */; };
+		9E432E323F97D100B2EBAEDC /* libSearchListDomainInterface.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 795ED90CAFDFA6131FB97981 /* libSearchListDomainInterface.a */; };
+		9F449CC70CC84F6882AEF9A7 /* libFoundationShared.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE6DB10CAE5EAEA7227BB892 /* libFoundationShared.a */; };
+		A028D85B8CA4AE84D039102B /* Fakery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFAF11D494D1851C0B433FA6 /* Fakery.framework */; };
+		A1F6A558D3D7F57C1CA9D818 /* SearchFeatureTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B676C13A7100D447CE7FF1 /* SearchFeatureTest.swift */; };
+		A1FA8559E235ED8DD1AA5666 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF7EFB9175B20D2B6ECD20F /* RxSwift.framework */; };
+		A24DE4A04B6756AD6D3A8642 /* libFoundationShared.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE6DB10CAE5EAEA7227BB892 /* libFoundationShared.a */; };
+		A5269900C403A9E93A8D4B8E /* SnapKit_SnapKit.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = 3228F6E30EFDCA9A68079EC3 /* SnapKit_SnapKit.bundle */; };
+		A8827675A1D82D5A7462AA95 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E643C408D38F886ACF7460CB /* CFNetwork.framework */; };
+		A980237362C0BF8475185F29 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 896164EF874D4ABC578933AC /* Alamofire.framework */; };
+		AC0579B92B168C01EF4170B7 /* SearchListInputImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23507009BB99649376057DC2 /* SearchListInputImpl.swift */; };
+		AF16B9F9F07C1074529A5AA8 /* libSearchFeatureInterface.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C72D86AD6A2B5499FE5EC13 /* libSearchFeatureInterface.a */; };
+		B018FB77B754DD826ABC19EE /* SearchViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035A6D81324361D8F02D57D4 /* SearchViewState.swift */; };
+		B1B67417C40627B5D294402C /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6740FDFAA2502136A9247EE9 /* RxRelay.framework */; };
+		B34D7BC3167184C59E13CAEA /* SearchViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D7FC4840FF3A80ADC05C9 /* SearchViewReactor.swift */; };
+		B3CA0CEDCE4D544B3A42E569 /* RxSwift_RxCocoaRuntime.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9370F432A82903D9B2E090EF /* RxSwift_RxCocoaRuntime.bundle */; };
+		B3F3D7F741AB70E6C3158E61 /* SearchViewAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D77CC61F80EBE68E0B5D9F /* SearchViewAction.swift */; };
+		B434D6FD5C1F10DAACCE70B9 /* RxSwift_RxCocoaRuntime.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9370F432A82903D9B2E090EF /* RxSwift_RxCocoaRuntime.bundle */; };
+		B4F76FF38FE08B858FF73551 /* SearchViewAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D77CC61F80EBE68E0B5D9F /* SearchViewAction.swift */; };
+		B9EEEDA147A630C2C05249CA /* ReactorKitRuntime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 982C9AF1C526CB385B169E10 /* ReactorKitRuntime.framework */; };
+		BC8372E619FD6A0613D1447C /* libSearchFeatureInterface.a in Dependencies */ = {isa = PBXBuildFile; fileRef = 9C72D86AD6A2B5499FE5EC13 /* libSearchFeatureInterface.a */; };
+		BFAC4F949D364D3B445853F2 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FBF7EFB9175B20D2B6ECD20F /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C16DC0BFB30D4F2A93C69B76 /* libUserAPICore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0212F4EDBCF8006C770C6838 /* libUserAPICore.a */; };
+		C18C0ACCDBCCF58C65D9F2FC /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF8DBCF7983D98D2D6343D6 /* SearchViewController.swift */; };
+		C2231B338F10AD2990BBE1AA /* FakeSearchListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A573EAC93EEDBFE3F7E3AE2A /* FakeSearchListUseCase.swift */; };
+		C41DA3FC519F4FA8CE3085EB /* libReactiveXShared.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 077648186B9120A3104EB40E /* libReactiveXShared.a */; };
+		C84CED034A115A9F92249850 /* SearchFeatureOutputImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AAD5373A940940ABB49B5C /* SearchFeatureOutputImpl.swift */; };
+		C8BA18C4F610F869FECF8E19 /* Alamofire_Alamofire.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CA876BF3539520274159B5F8 /* Alamofire_Alamofire.bundle */; };
+		CCF5EC3DEDBB84B6F44A54C7 /* SearchViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D7FC4840FF3A80ADC05C9 /* SearchViewReactor.swift */; };
+		D026FD34466651079C230DCE /* SearchViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28494B38AFC8CC7DEBF42A50 /* SearchViewItem.swift */; };
+		D19F177A725BD45D8CB82F76 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 176105C9CB2F699E77D1D583 /* Swinject.framework */; };
+		D38E761A95E836B714DF78AE /* RxSwift_RxCocoaRuntime.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = 9370F432A82903D9B2E090EF /* RxSwift_RxCocoaRuntime.bundle */; };
+		DAF559586C7D1883AAECA2DD /* libSearchFeature.a in Dependencies */ = {isa = PBXBuildFile; fileRef = EA55783AEC13420C76677B53 /* libSearchFeature.a */; };
+		DBD6A09FFD30E177B031CC34 /* TuistBundle+SearchFeatureDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A2D4E9FB62A6FDABD822FB /* TuistBundle+SearchFeatureDemoApp.swift */; };
+		DCCA91D312F908C6636D7E79 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE2E39E38DA7A00AE57A98C /* RxCocoa.framework */; };
+		DDCD945BD72D081563568237 /* Fakery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFAF11D494D1851C0B433FA6 /* Fakery.framework */; };
+		DE46E29E28877496FD49CCF7 /* SearchViewAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DC630C010DE15DC86A0FB8 /* SearchViewAssembly.swift */; };
+		DEA904D88A0A5BC2C620E812 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 176105C9CB2F699E77D1D583 /* Swinject.framework */; };
+		E140E0C0A3B185D72978A429 /* SearchListInputImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23507009BB99649376057DC2 /* SearchListInputImpl.swift */; };
+		E2880DD15D6196EFD7EB27D0 /* SearchViewAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DC630C010DE15DC86A0FB8 /* SearchViewAssembly.swift */; };
+		E6B95C05642F803B355FB7D4 /* SearchFeatureOutputImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AAD5373A940940ABB49B5C /* SearchFeatureOutputImpl.swift */; };
+		E6E222C6B03FE07B21D54D30 /* libSearchListDomainInterface.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 795ED90CAFDFA6131FB97981 /* libSearchListDomainInterface.a */; };
+		EE0CF2363F08708B44EE0E81 /* ReactorKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81080C3ECAD261A176040886 /* ReactorKit.framework */; };
+		EE6502E5C0B0AAD5684DDFD2 /* Fakery_Fakery.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A2F7237B8CBCE6724B10B165 /* Fakery_Fakery.bundle */; };
+		FA83415AA0B4D84F01F6BE49 /* WeakMapTable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EF4DA1CBE0F67A5DCABEAF5 /* WeakMapTable.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		10B2E43E217E3526479C1C46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18910CC078D3CEC08DF9A12B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AC0FCC30DE1D668EF59EBDA;
+			remoteInfo = SearchFeature;
+		};
+		2039C389D59E82CE6B298338 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18910CC078D3CEC08DF9A12B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AC0FCC30DE1D668EF59EBDA;
+			remoteInfo = SearchFeature;
+		};
+		64061555E3B1A70D92256358 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18910CC078D3CEC08DF9A12B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB3678F9D19700878ACDEC41;
+			remoteInfo = SearchFeatureInterface;
+		};
+		945C91A2800E4B4204690828 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18910CC078D3CEC08DF9A12B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB3678F9D19700878ACDEC41;
+			remoteInfo = SearchFeatureInterface;
+		};
+		9E1065556D0AE81C408F67DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18910CC078D3CEC08DF9A12B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A7B6169DB745C9D6CA36DD6;
+			remoteInfo = SearchFeatureTesting;
+		};
+		AC41CDB26E79CF1CAED582B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18910CC078D3CEC08DF9A12B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AC0FCC30DE1D668EF59EBDA;
+			remoteInfo = SearchFeature;
+		};
+		B9D043F5429AD38482B2E669 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18910CC078D3CEC08DF9A12B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB3678F9D19700878ACDEC41;
+			remoteInfo = SearchFeatureInterface;
+		};
+		C22202B7ACB606E94F7B3810 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18910CC078D3CEC08DF9A12B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A7B6169DB745C9D6CA36DD6;
+			remoteInfo = SearchFeatureTesting;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2649DD4DC24060A241DDC6D2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E89DD562190270996E9827C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		503B1EB1AEEE51B2A552D2D9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		542C77A59F56777407904F71 /* Dependencies */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstSubfolderSpec = 16;
+			files = (
+				1294FC94AD2F559331C1938A /* libDesignSystem.a in Dependencies */,
+				1AFA5DA9AAC8BE464CDEA857 /* Fakery.framework in Dependencies */,
+				2E37C062CE96BD910E16DE00 /* libReactiveXShared.a in Dependencies */,
+				BC8372E619FD6A0613D1447C /* libSearchFeatureInterface.a in Dependencies */,
+				0A62818CB9AA0A802CC00D2C /* libSearchListDomainInterface.a in Dependencies */,
+				7DD2102BC5988A14E27E9A3C /* SnapKit.framework in Dependencies */,
+				5E92F8AD9D07F2C296B68A3A /* Swinject.framework in Dependencies */,
+			);
+			name = Dependencies;
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		77605D73915DA13BA508BB60 /* Dependencies */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstSubfolderSpec = 16;
+			files = (
+				3078AF5349F10C370E32394A /* Alamofire_Alamofire.bundle in Dependencies */,
+				8A07BA0FF051F187F3A01319 /* Fakery_Fakery.bundle in Dependencies */,
+				639E3ADA8C5142289521A67D /* RxSwift_RxCocoa.bundle in Dependencies */,
+				7757247F46A26A8B14125A41 /* RxSwift_RxCocoaRuntime.bundle in Dependencies */,
+				49F5773E4EB6470A3348777C /* RxSwift_RxRelay.bundle in Dependencies */,
+				26F0D1D47352FF9E07678109 /* SnapKit_SnapKit.bundle in Dependencies */,
+			);
+			name = Dependencies;
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		B68C3FFBD8D04D1D3B32198E /* Dependencies */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstSubfolderSpec = 16;
+			files = (
+				3202610D00E03D3E9E447924 /* Fakery_Fakery.bundle in Dependencies */,
+				81B9DE05915C45FE2952CB2E /* RxSwift_RxCocoa.bundle in Dependencies */,
+				D38E761A95E836B714DF78AE /* RxSwift_RxCocoaRuntime.bundle in Dependencies */,
+				073C628320B668B846A9C204 /* RxSwift_RxRelay.bundle in Dependencies */,
+				A5269900C403A9E93A8D4B8E /* SnapKit_SnapKit.bundle in Dependencies */,
+			);
+			name = Dependencies;
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		C0E1A33EBD4113E228BB911D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F45836DCA9475947E0B91809 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BFAC4F949D364D3B445853F2 /* RxSwift.framework in Embed Frameworks */,
+				07C193B06B10D20BCBB8BC17 /* UserAPICoreInterface.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F49102E4D8F4240078883BAD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9BC76E10A4A9193273A8A32 /* Dependencies */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstSubfolderSpec = 16;
+			files = (
+				DAF559586C7D1883AAECA2DD /* libSearchFeature.a in Dependencies */,
+				572A15525962C745989DDE6F /* libSearchFeatureInterface.a in Dependencies */,
+			);
+			name = Dependencies;
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0212F4EDBCF8006C770C6838 /* libUserAPICore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUserAPICore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		035A6D81324361D8F02D57D4 /* SearchViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewState.swift; sourceTree = "<group>"; };
+		054C16AF22E0491258B9565B /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		077648186B9120A3104EB40E /* libReactiveXShared.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libReactiveXShared.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CC6DFC31050415DD2E27598 /* Moya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Moya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		176105C9CB2F699E77D1D583 /* Swinject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swinject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23507009BB99649376057DC2 /* SearchListInputImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListInputImpl.swift; sourceTree = "<group>"; };
+		28494B38AFC8CC7DEBF42A50 /* SearchViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewItem.swift; sourceTree = "<group>"; };
+		3228F6E30EFDCA9A68079EC3 /* SnapKit_SnapKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapKit_SnapKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		368D7FC4840FF3A80ADC05C9 /* SearchViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewReactor.swift; sourceTree = "<group>"; };
+		44CAFE114978F47740FD2D0F /* SearchFeatureOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFeatureOutput.swift; sourceTree = "<group>"; };
+		4A7E4F5BCC085D8A31746BE8 /* SearchFeatureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SearchFeatureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EF4DA1CBE0F67A5DCABEAF5 /* WeakMapTable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WeakMapTable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50204C2E21C36CC54CC36FF6 /* libDesignSystem.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDesignSystem.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		50B676C13A7100D447CE7FF1 /* SearchFeatureTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFeatureTest.swift; sourceTree = "<group>"; };
+		52D77CC61F80EBE68E0B5D9F /* SearchViewAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewAction.swift; sourceTree = "<group>"; };
+		5E8FCE4A073CB109E4317543 /* SearchFeatureTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SearchFeatureTests-Info.plist"; sourceTree = "<group>"; };
+		64A2D4E9FB62A6FDABD822FB /* TuistBundle+SearchFeatureDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+SearchFeatureDemoApp.swift"; sourceTree = "<group>"; };
+		668A85CE5EEAC29039CD0C1B /* SearchViewMutation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewMutation.swift; sourceTree = "<group>"; };
+		6740FDFAA2502136A9247EE9 /* RxRelay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxRelay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AC61FC13B6FA4A2C706179C /* libSearchFeatureTesting.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSearchFeatureTesting.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7593385E1916CB19077C1D5B /* UserAPICoreInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UserAPICoreInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		795ED90CAFDFA6131FB97981 /* libSearchListDomainInterface.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSearchListDomainInterface.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		81080C3ECAD261A176040886 /* ReactorKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactorKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		896164EF874D4ABC578933AC /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9370F432A82903D9B2E090EF /* RxSwift_RxCocoaRuntime.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxSwift_RxCocoaRuntime.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		982C9AF1C526CB385B169E10 /* ReactorKitRuntime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactorKitRuntime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98CFD954368AAE60A90FCAD2 /* SearchFeatureDemoApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SearchFeatureDemoApp-Info.plist"; sourceTree = "<group>"; };
+		9C72D86AD6A2B5499FE5EC13 /* libSearchFeatureInterface.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSearchFeatureInterface.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1AAD5373A940940ABB49B5C /* SearchFeatureOutputImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFeatureOutputImpl.swift; sourceTree = "<group>"; };
+		A2F7237B8CBCE6724B10B165 /* Fakery_Fakery.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Fakery_Fakery.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		A573EAC93EEDBFE3F7E3AE2A /* FakeSearchListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeSearchListUseCase.swift; sourceTree = "<group>"; };
+		AA1F6AB501C5B59C363924F9 /* Testing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Testing.swift; sourceTree = "<group>"; };
+		B8EB3F75C8DC97B033801563 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BC998EE6035417BC2D9D2A4D /* SearchFeatureDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchFeatureDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDE2E39E38DA7A00AE57A98C /* RxCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA876BF3539520274159B5F8 /* Alamofire_Alamofire.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Alamofire_Alamofire.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4DC630C010DE15DC86A0FB8 /* SearchViewAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewAssembly.swift; sourceTree = "<group>"; };
+		DC491CDE9C509C4A5FCBEA96 /* libSearchListDomain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSearchListDomain.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E643C408D38F886ACF7460CB /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		E9435C3DA0179DC64AB24382 /* SearchFeaturePreview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SearchFeaturePreview.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA55783AEC13420C76677B53 /* libSearchFeature.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSearchFeature.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDF8DBCF7983D98D2D6343D6 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		EE6DB10CAE5EAEA7227BB892 /* libFoundationShared.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFoundationShared.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1CF1DEB5F9AAB73E254D338 /* RxSwift_RxRelay.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxSwift_RxRelay.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		F391BBC6B75FC3D756C74726 /* RxCocoaRuntime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxCocoaRuntime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8AB81514D41762A46963759 /* RxSwift_RxCocoa.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxSwift_RxCocoa.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB45AA80D6EFAECDD4A54F1E /* SearchFeaturePreview-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SearchFeaturePreview-Info.plist"; sourceTree = "<group>"; };
+		FBF7EFB9175B20D2B6ECD20F /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF5DCDD14C117C2D237596DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FFAF11D494D1851C0B433FA6 /* Fakery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fakery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		013A11AACC0478AB7B164294 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2866A5BB3FF3C11D4E3A1702 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48199693275D9CBC2714E42B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ACB04072B6DEB3931F35C71 /* libDesignSystem.a in Frameworks */,
+				10C8DE74BB8425DEC310385C /* Fakery.framework in Frameworks */,
+				84EC3DB50EC386491F48CC0F /* libFoundationShared.a in Frameworks */,
+				80634C546F4C54A86A1D8700 /* libReactiveXShared.a in Frameworks */,
+				7B9CF671E012C1B105213ECD /* ReactorKit.framework in Frameworks */,
+				742A651AD58B8A2D4B0FF7A9 /* ReactorKitRuntime.framework in Frameworks */,
+				DCCA91D312F908C6636D7E79 /* RxCocoa.framework in Frameworks */,
+				12785541B68BEAE6A10ECD14 /* RxCocoaRuntime.framework in Frameworks */,
+				B1B67417C40627B5D294402C /* RxRelay.framework in Frameworks */,
+				1C648259FD7643E3CC0D4277 /* RxSwift.framework in Frameworks */,
+				595B2FBEEEF50AD2BC89E826 /* libSearchFeature.a in Frameworks */,
+				6C29472C5877383ED20821A7 /* libSearchFeatureInterface.a in Frameworks */,
+				3D47A193FD46CEF67B688EE5 /* libSearchFeatureTesting.a in Frameworks */,
+				0B1B01C0C2D88C94ADDDFE93 /* libSearchListDomainInterface.a in Frameworks */,
+				6E6968284B9897EFC3E1D365 /* SnapKit.framework in Frameworks */,
+				D19F177A725BD45D8CB82F76 /* Swinject.framework in Frameworks */,
+				955E959D458291EBEAFDD885 /* WeakMapTable.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54C1E256F6BE56075FE8BB6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58E33128B3DB4304526B3A18 /* libDesignSystem.a in Frameworks */,
+				DDCD945BD72D081563568237 /* Fakery.framework in Frameworks */,
+				A24DE4A04B6756AD6D3A8642 /* libFoundationShared.a in Frameworks */,
+				C41DA3FC519F4FA8CE3085EB /* libReactiveXShared.a in Frameworks */,
+				EE0CF2363F08708B44EE0E81 /* ReactorKit.framework in Frameworks */,
+				8D15C4B763F063BB638CBDA9 /* ReactorKitRuntime.framework in Frameworks */,
+				836DE7C0117E0307C7C723A4 /* RxCocoa.framework in Frameworks */,
+				91F1F9E685E9738239B66F30 /* RxCocoaRuntime.framework in Frameworks */,
+				663AAC92A294CCF770777582 /* RxRelay.framework in Frameworks */,
+				A1FA8559E235ED8DD1AA5666 /* RxSwift.framework in Frameworks */,
+				AF16B9F9F07C1074529A5AA8 /* libSearchFeatureInterface.a in Frameworks */,
+				E6E222C6B03FE07B21D54D30 /* libSearchListDomainInterface.a in Frameworks */,
+				74B3AF0E7A0E57D6C10972EA /* SnapKit.framework in Frameworks */,
+				FA83415AA0B4D84F01F6BE49 /* WeakMapTable.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF4814615F4F05ED9CCC59C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8827675A1D82D5A7462AA95 /* CFNetwork.framework in Frameworks */,
+				A980237362C0BF8475185F29 /* Alamofire.framework in Frameworks */,
+				536FF15042825C4ABD25A116 /* libDesignSystem.a in Frameworks */,
+				A028D85B8CA4AE84D039102B /* Fakery.framework in Frameworks */,
+				9F449CC70CC84F6882AEF9A7 /* libFoundationShared.a in Frameworks */,
+				609177755A177B5678CDE943 /* Moya.framework in Frameworks */,
+				00A5DA44940144CBF2F180F9 /* libReactiveXShared.a in Frameworks */,
+				7FB4A6DDC0770D9B6A2A8AE4 /* ReactorKit.framework in Frameworks */,
+				B9EEEDA147A630C2C05249CA /* ReactorKitRuntime.framework in Frameworks */,
+				4E33FB6B7177B36AE93777B4 /* RxCocoa.framework in Frameworks */,
+				68D5772733E3DCFB712730F7 /* RxCocoaRuntime.framework in Frameworks */,
+				426C544B207E580F0E556A5A /* RxRelay.framework in Frameworks */,
+				0678AD0ACCAE2DFDCA95AEE1 /* RxSwift.framework in Frameworks */,
+				6B9D4F2F36767A65D9E66584 /* libSearchFeature.a in Frameworks */,
+				3C1FF6FE14E581693F60D0EC /* libSearchFeatureInterface.a in Frameworks */,
+				298F2E6FF9FA7004C06969B6 /* libSearchFeatureTesting.a in Frameworks */,
+				161C4B68A8BEFE39D8E5ADCD /* libSearchListDomain.a in Frameworks */,
+				9E432E323F97D100B2EBAEDC /* libSearchListDomainInterface.a in Frameworks */,
+				8D0790BC34429966DD5AA624 /* SnapKit.framework in Frameworks */,
+				DEA904D88A0A5BC2C620E812 /* Swinject.framework in Frameworks */,
+				C16DC0BFB30D4F2A93C69B76 /* libUserAPICore.a in Frameworks */,
+				7B5EF81FBCDA8EB088024471 /* UserAPICoreInterface.framework in Frameworks */,
+				859D06C35DFA69821A59B385 /* WeakMapTable.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C29665E6F34366CB4A437C4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A5F777E0B17FB355EF59582 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FF5DCDD14C117C2D237596DD /* AppDelegate.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		28C408BB12547FC77B31253F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E643C408D38F886ACF7460CB /* CFNetwork.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		33D0514A29365C16C60EBB31 /* fake */ = {
+			isa = PBXGroup;
+			children = (
+				A573EAC93EEDBFE3F7E3AE2A /* FakeSearchListUseCase.swift */,
+			);
+			path = fake;
+			sourceTree = "<group>";
+		};
+		441154BC380A7B8AE22C1B79 /* Derived */ = {
+			isa = PBXGroup;
+			children = (
+				618C0ECE1E74C7584E828003 /* InfoPlists */,
+				6231F5DC85FC5AF5283CC04D /* Sources */,
+			);
+			path = Derived;
+			sourceTree = "<group>";
+		};
+		518DE635DAD697ECE3FFB65B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				33D0514A29365C16C60EBB31 /* fake */,
+				9D6B713E4902AFC9BB6BD653 /* impl */,
+				A1AAD5373A940940ABB49B5C /* SearchFeatureOutputImpl.swift */,
+				52D77CC61F80EBE68E0B5D9F /* SearchViewAction.swift */,
+				D4DC630C010DE15DC86A0FB8 /* SearchViewAssembly.swift */,
+				EDF8DBCF7983D98D2D6343D6 /* SearchViewController.swift */,
+				28494B38AFC8CC7DEBF42A50 /* SearchViewItem.swift */,
+				668A85CE5EEAC29039CD0C1B /* SearchViewMutation.swift */,
+				368D7FC4840FF3A80ADC05C9 /* SearchViewReactor.swift */,
+				035A6D81324361D8F02D57D4 /* SearchViewState.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		618C0ECE1E74C7584E828003 /* InfoPlists */ = {
+			isa = PBXGroup;
+			children = (
+				98CFD954368AAE60A90FCAD2 /* SearchFeatureDemoApp-Info.plist */,
+				FB45AA80D6EFAECDD4A54F1E /* SearchFeaturePreview-Info.plist */,
+				5E8FCE4A073CB109E4317543 /* SearchFeatureTests-Info.plist */,
+			);
+			path = InfoPlists;
+			sourceTree = "<group>";
+		};
+		6231F5DC85FC5AF5283CC04D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				64A2D4E9FB62A6FDABD822FB /* TuistBundle+SearchFeatureDemoApp.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		789BBFD0CA20499A9D81F358 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				50B676C13A7100D447CE7FF1 /* SearchFeatureTest.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		8789866368170D0481E339CE /* Testing */ = {
+			isa = PBXGroup;
+			children = (
+				AA1F6AB501C5B59C363924F9 /* Testing.swift */,
+			);
+			path = Testing;
+			sourceTree = "<group>";
+		};
+		9729105D6A40BB491003B37E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA876BF3539520274159B5F8 /* Alamofire_Alamofire.bundle */,
+				896164EF874D4ABC578933AC /* Alamofire.framework */,
+				A2F7237B8CBCE6724B10B165 /* Fakery_Fakery.bundle */,
+				FFAF11D494D1851C0B433FA6 /* Fakery.framework */,
+				50204C2E21C36CC54CC36FF6 /* libDesignSystem.a */,
+				EE6DB10CAE5EAEA7227BB892 /* libFoundationShared.a */,
+				077648186B9120A3104EB40E /* libReactiveXShared.a */,
+				EA55783AEC13420C76677B53 /* libSearchFeature.a */,
+				9C72D86AD6A2B5499FE5EC13 /* libSearchFeatureInterface.a */,
+				6AC61FC13B6FA4A2C706179C /* libSearchFeatureTesting.a */,
+				DC491CDE9C509C4A5FCBEA96 /* libSearchListDomain.a */,
+				795ED90CAFDFA6131FB97981 /* libSearchListDomainInterface.a */,
+				0212F4EDBCF8006C770C6838 /* libUserAPICore.a */,
+				0CC6DFC31050415DD2E27598 /* Moya.framework */,
+				81080C3ECAD261A176040886 /* ReactorKit.framework */,
+				982C9AF1C526CB385B169E10 /* ReactorKitRuntime.framework */,
+				BDE2E39E38DA7A00AE57A98C /* RxCocoa.framework */,
+				F391BBC6B75FC3D756C74726 /* RxCocoaRuntime.framework */,
+				6740FDFAA2502136A9247EE9 /* RxRelay.framework */,
+				F8AB81514D41762A46963759 /* RxSwift_RxCocoa.bundle */,
+				9370F432A82903D9B2E090EF /* RxSwift_RxCocoaRuntime.bundle */,
+				F1CF1DEB5F9AAB73E254D338 /* RxSwift_RxRelay.bundle */,
+				FBF7EFB9175B20D2B6ECD20F /* RxSwift.framework */,
+				BC998EE6035417BC2D9D2A4D /* SearchFeatureDemoApp.app */,
+				E9435C3DA0179DC64AB24382 /* SearchFeaturePreview.framework */,
+				4A7E4F5BCC085D8A31746BE8 /* SearchFeatureTests.xctest */,
+				3228F6E30EFDCA9A68079EC3 /* SnapKit_SnapKit.bundle */,
+				054C16AF22E0491258B9565B /* SnapKit.framework */,
+				176105C9CB2F699E77D1D583 /* Swinject.framework */,
+				7593385E1916CB19077C1D5B /* UserAPICoreInterface.framework */,
+				4EF4DA1CBE0F67A5DCABEAF5 /* WeakMapTable.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D6B713E4902AFC9BB6BD653 /* impl */ = {
+			isa = PBXGroup;
+			children = (
+				23507009BB99649376057DC2 /* SearchListInputImpl.swift */,
+			);
+			path = impl;
+			sourceTree = "<group>";
+		};
+		ACD022BE5923EE480B03C3B9 = {
+			isa = PBXGroup;
+			children = (
+				E84D954FB2EE7F5CE8D1B280 /* Project */,
+				9729105D6A40BB491003B37E /* Products */,
+				28C408BB12547FC77B31253F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D0EB49314211B9D28899794E /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				D26FCFE11D51E2B10A302A55 /* Resources */,
+				1A5F777E0B17FB355EF59582 /* Sources */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		D26FCFE11D51E2B10A302A55 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B8EB3F75C8DC97B033801563 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D38DC8411B3C51AA8456CA3C /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				44CAFE114978F47740FD2D0F /* SearchFeatureOutput.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		E84D954FB2EE7F5CE8D1B280 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				D0EB49314211B9D28899794E /* Demo */,
+				441154BC380A7B8AE22C1B79 /* Derived */,
+				D38DC8411B3C51AA8456CA3C /* Interface */,
+				518DE635DAD697ECE3FFB65B /* Sources */,
+				8789866368170D0481E339CE /* Testing */,
+				789BBFD0CA20499A9D81F358 /* Tests */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2AC0FCC30DE1D668EF59EBDA /* SearchFeature */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A2B9227B26DDFA640D31A31 /* Build configuration list for PBXNativeTarget "SearchFeature" */;
+			buildPhases = (
+				E11DE236052BBE5B562648AD /* Sources */,
+				18AA43413938EDBF6A2B8853 /* Resources */,
+				C29665E6F34366CB4A437C4E /* Frameworks */,
+				2649DD4DC24060A241DDC6D2 /* Embed Frameworks */,
+				542C77A59F56777407904F71 /* Dependencies */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F03830794B04D1E7AC9CB5B /* PBXTargetDependency */,
+			);
+			name = SearchFeature;
+			packageProductDependencies = (
+			);
+			productName = SearchFeature;
+			productReference = EA55783AEC13420C76677B53 /* libSearchFeature.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8A7B6169DB745C9D6CA36DD6 /* SearchFeatureTesting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F79A015E10678F38512AE04 /* Build configuration list for PBXNativeTarget "SearchFeatureTesting" */;
+			buildPhases = (
+				FE413BCEF0D9295A79E7A051 /* Sources */,
+				BBA60F2AE39B13E2B1E4E590 /* Resources */,
+				013A11AACC0478AB7B164294 /* Frameworks */,
+				F49102E4D8F4240078883BAD /* Embed Frameworks */,
+				F9BC76E10A4A9193273A8A32 /* Dependencies */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6BE7C7DB5DC758F7FC2175BC /* PBXTargetDependency */,
+				2F612333226D0C9100396441 /* PBXTargetDependency */,
+			);
+			name = SearchFeatureTesting;
+			packageProductDependencies = (
+			);
+			productName = SearchFeatureTesting;
+			productReference = 6AC61FC13B6FA4A2C706179C /* libSearchFeatureTesting.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C41DB0A3398AC414A394F29E /* SearchFeatureDemoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F48C1BACC010DC5EC1ACFFB7 /* Build configuration list for PBXNativeTarget "SearchFeatureDemoApp" */;
+			buildPhases = (
+				1962CC633876F667976D3B2F /* Sources */,
+				C44EE31C4DCCD79815EA1619 /* Resources */,
+				BF4814615F4F05ED9CCC59C3 /* Frameworks */,
+				F45836DCA9475947E0B91809 /* Embed Frameworks */,
+				77605D73915DA13BA508BB60 /* Dependencies */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CB3D545B1D843491241C768 /* PBXTargetDependency */,
+				D57CF72401C358ED8AECFBB8 /* PBXTargetDependency */,
+			);
+			name = SearchFeatureDemoApp;
+			packageProductDependencies = (
+			);
+			productName = SearchFeatureDemoApp;
+			productReference = BC998EE6035417BC2D9D2A4D /* SearchFeatureDemoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C6587E556FCA0B08A14BD44D /* SearchFeaturePreview */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D702818F6DF11277D2D21287 /* Build configuration list for PBXNativeTarget "SearchFeaturePreview" */;
+			buildPhases = (
+				CD9D335C2BCF33F63838FD93 /* Sources */,
+				F90977AE74462468C7869585 /* Resources */,
+				54C1E256F6BE56075FE8BB6D /* Frameworks */,
+				4E89DD562190270996E9827C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B876D0027B6123E4A49FD41 /* PBXTargetDependency */,
+			);
+			name = SearchFeaturePreview;
+			packageProductDependencies = (
+			);
+			productName = SearchFeaturePreview;
+			productReference = E9435C3DA0179DC64AB24382 /* SearchFeaturePreview.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E613C9FBC80E7921FC43AF60 /* SearchFeatureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBA5EBD7A7B9BD5E80421E7A /* Build configuration list for PBXNativeTarget "SearchFeatureTests" */;
+			buildPhases = (
+				5259463ADE7947E790B27997 /* Sources */,
+				A20B002FB2F9B73167616B28 /* Resources */,
+				48199693275D9CBC2714E42B /* Frameworks */,
+				503B1EB1AEEE51B2A552D2D9 /* Embed Frameworks */,
+				B68C3FFBD8D04D1D3B32198E /* Dependencies */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F267284CB82DF4883F3FB1F4 /* PBXTargetDependency */,
+				8851B228E6E791F706351A17 /* PBXTargetDependency */,
+			);
+			name = SearchFeatureTests;
+			packageProductDependencies = (
+			);
+			productName = SearchFeatureTests;
+			productReference = 4A7E4F5BCC085D8A31746BE8 /* SearchFeatureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EB3678F9D19700878ACDEC41 /* SearchFeatureInterface */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE03D0D7BDFA41872880DB75 /* Build configuration list for PBXNativeTarget "SearchFeatureInterface" */;
+			buildPhases = (
+				201C232B7569AF6DD5FC1FD2 /* Sources */,
+				AF3680324D2C724B6AA81741 /* Resources */,
+				2866A5BB3FF3C11D4E3A1702 /* Frameworks */,
+				C0E1A33EBD4113E228BB911D /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SearchFeatureInterface;
+			packageProductDependencies = (
+			);
+			productName = SearchFeatureInterface;
+			productReference = 9C72D86AD6A2B5499FE5EC13 /* libSearchFeatureInterface.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18910CC078D3CEC08DF9A12B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 476BC85466F7FCAE523D4166 /* Build configuration list for PBXProject "SearchFeature" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = ACD022BE5923EE480B03C3B9;
+			productRefGroup = 9729105D6A40BB491003B37E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2AC0FCC30DE1D668EF59EBDA /* SearchFeature */,
+				C41DB0A3398AC414A394F29E /* SearchFeatureDemoApp */,
+				EB3678F9D19700878ACDEC41 /* SearchFeatureInterface */,
+				C6587E556FCA0B08A14BD44D /* SearchFeaturePreview */,
+				8A7B6169DB745C9D6CA36DD6 /* SearchFeatureTesting */,
+				E613C9FBC80E7921FC43AF60 /* SearchFeatureTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18AA43413938EDBF6A2B8853 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A20B002FB2F9B73167616B28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				376EC848075F1D164B01E0D1 /* Fakery_Fakery.bundle in Resources */,
+				5725F80298431F56F9285906 /* RxSwift_RxCocoa.bundle in Resources */,
+				B3CA0CEDCE4D544B3A42E569 /* RxSwift_RxCocoaRuntime.bundle in Resources */,
+				66E38B9B3172D749E51E52FB /* RxSwift_RxRelay.bundle in Resources */,
+				5E2C8D772DCD30E6503EF76A /* SnapKit_SnapKit.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF3680324D2C724B6AA81741 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBA60F2AE39B13E2B1E4E590 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C44EE31C4DCCD79815EA1619 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8611D4C73F048AB454677031 /* LaunchScreen.storyboard in Resources */,
+				C8BA18C4F610F869FECF8E19 /* Alamofire_Alamofire.bundle in Resources */,
+				EE6502E5C0B0AAD5684DDFD2 /* Fakery_Fakery.bundle in Resources */,
+				582EF96B7CD6E41C7C8589F3 /* RxSwift_RxCocoa.bundle in Resources */,
+				B434D6FD5C1F10DAACCE70B9 /* RxSwift_RxCocoaRuntime.bundle in Resources */,
+				953B57E0D0473C8BFB36449D /* RxSwift_RxRelay.bundle in Resources */,
+				7CC295C8D498B5D9F0BE5837 /* SnapKit_SnapKit.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F90977AE74462468C7869585 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1962CC633876F667976D3B2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97ACA20F320BFFA021667E6C /* AppDelegate.swift in Sources */,
+				DBD6A09FFD30E177B031CC34 /* TuistBundle+SearchFeatureDemoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		201C232B7569AF6DD5FC1FD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99DEA110BF00885BA26CAF25 /* SearchFeatureOutput.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5259463ADE7947E790B27997 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1F6A558D3D7F57C1CA9D818 /* SearchFeatureTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD9D335C2BCF33F63838FD93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C84CED034A115A9F92249850 /* SearchFeatureOutputImpl.swift in Sources */,
+				B3F3D7F741AB70E6C3158E61 /* SearchViewAction.swift in Sources */,
+				DE46E29E28877496FD49CCF7 /* SearchViewAssembly.swift in Sources */,
+				C18C0ACCDBCCF58C65D9F2FC /* SearchViewController.swift in Sources */,
+				104021D61F340ADBCBA0AA4D /* SearchViewItem.swift in Sources */,
+				799E535867F836BE206281F0 /* SearchViewMutation.swift in Sources */,
+				CCF5EC3DEDBB84B6F44A54C7 /* SearchViewReactor.swift in Sources */,
+				B018FB77B754DD826ABC19EE /* SearchViewState.swift in Sources */,
+				000EF7459BA12F2ED2D525AC /* FakeSearchListUseCase.swift in Sources */,
+				AC0579B92B168C01EF4170B7 /* SearchListInputImpl.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E11DE236052BBE5B562648AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6B95C05642F803B355FB7D4 /* SearchFeatureOutputImpl.swift in Sources */,
+				B4F76FF38FE08B858FF73551 /* SearchViewAction.swift in Sources */,
+				E2880DD15D6196EFD7EB27D0 /* SearchViewAssembly.swift in Sources */,
+				452F8BF4AEE1C9F0E8B6024B /* SearchViewController.swift in Sources */,
+				D026FD34466651079C230DCE /* SearchViewItem.swift in Sources */,
+				9337A804F232B03057ECA340 /* SearchViewMutation.swift in Sources */,
+				B34D7BC3167184C59E13CAEA /* SearchViewReactor.swift in Sources */,
+				5AA303FEB46EB305F81915A7 /* SearchViewState.swift in Sources */,
+				C2231B338F10AD2990BBE1AA /* FakeSearchListUseCase.swift in Sources */,
+				E140E0C0A3B185D72978A429 /* SearchListInputImpl.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE413BCEF0D9295A79E7A051 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				156811D6B9B39BA05BBFABB5 /* Testing.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2F612333226D0C9100396441 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SearchFeatureInterface;
+			target = EB3678F9D19700878ACDEC41 /* SearchFeatureInterface */;
+			targetProxy = B9D043F5429AD38482B2E669 /* PBXContainerItemProxy */;
+		};
+		5B876D0027B6123E4A49FD41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SearchFeatureInterface;
+			target = EB3678F9D19700878ACDEC41 /* SearchFeatureInterface */;
+			targetProxy = 945C91A2800E4B4204690828 /* PBXContainerItemProxy */;
+		};
+		6BE7C7DB5DC758F7FC2175BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SearchFeature;
+			target = 2AC0FCC30DE1D668EF59EBDA /* SearchFeature */;
+			targetProxy = AC41CDB26E79CF1CAED582B6 /* PBXContainerItemProxy */;
+		};
+		6CB3D545B1D843491241C768 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SearchFeature;
+			target = 2AC0FCC30DE1D668EF59EBDA /* SearchFeature */;
+			targetProxy = 2039C389D59E82CE6B298338 /* PBXContainerItemProxy */;
+		};
+		7F03830794B04D1E7AC9CB5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SearchFeatureInterface;
+			target = EB3678F9D19700878ACDEC41 /* SearchFeatureInterface */;
+			targetProxy = 64061555E3B1A70D92256358 /* PBXContainerItemProxy */;
+		};
+		8851B228E6E791F706351A17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SearchFeatureTesting;
+			target = 8A7B6169DB745C9D6CA36DD6 /* SearchFeatureTesting */;
+			targetProxy = 9E1065556D0AE81C408F67DA /* PBXContainerItemProxy */;
+		};
+		D57CF72401C358ED8AECFBB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SearchFeatureTesting;
+			target = 8A7B6169DB745C9D6CA36DD6 /* SearchFeatureTesting */;
+			targetProxy = C22202B7ACB606E94F7B3810 /* PBXContainerItemProxy */;
+		};
+		F267284CB82DF4883F3FB1F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SearchFeature;
+			target = 2AC0FCC30DE1D668EF59EBDA /* SearchFeature */;
+			targetProxy = 10B2E43E217E3526479C1C46 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2EDA3E04E37D93D6B39C7895 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.talq.SearchFeatureInterface;
+				PRODUCT_NAME = SearchFeatureInterface;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					DEBUG,
+				);
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		44731320D2881C5C3869FBBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.talq.SearchFeatureInterface;
+				PRODUCT_NAME = SearchFeatureInterface;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		544767A5BDF8810B3A0C1488 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(inherited)",
+					"$(SRCROOT)/../../../Tuist/.build/checkouts/ReactorKit/Sources/ReactorKitRuntime/include",
+					"$(SRCROOT)/../../../Tuist/.build/checkouts/RxSwift/Sources/RxCocoaRuntime/include",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/ReactorKitRuntime/ReactorKitRuntime.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/RxCocoaRuntime/RxCocoaRuntime.modulemap",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/ReactorKitRuntime/ReactorKitRuntime.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/RxCocoaRuntime/RxCocoaRuntime.modulemap",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.talq.SearchFeatureTesting;
+				PRODUCT_NAME = SearchFeatureTesting;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		58D39EAE5E3FC853926285AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(inherited)",
+					"$(SRCROOT)/../../../Tuist/.build/checkouts/ReactorKit/Sources/ReactorKitRuntime/include",
+					"$(SRCROOT)/../../../Tuist/.build/checkouts/RxSwift/Sources/RxCocoaRuntime/include",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/ReactorKitRuntime/ReactorKitRuntime.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/RxCocoaRuntime/RxCocoaRuntime.modulemap",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/ReactorKitRuntime/ReactorKitRuntime.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/RxCocoaRuntime/RxCocoaRuntime.modulemap",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.talq.SearchFeatureFeature;
+				PRODUCT_NAME = SearchFeature;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					DEBUG,
+				);
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7A5DE9E2B7BAFF7D5B3BC668 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(inherited)",
+					"$(SRCROOT)/../../../Tuist/.build/checkouts/ReactorKit/Sources/ReactorKitRuntime/include",
+					"$(SRCROOT)/../../../Tuist/.build/checkouts/RxSwift/Sources/RxCocoaRuntime/include",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/ReactorKitRuntime/ReactorKitRuntime.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/RxCocoaRuntime/RxCocoaRuntime.modulemap",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/ReactorKitRuntime/ReactorKitRuntime.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/RxCocoaRuntime/RxCocoaRuntime.modulemap",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.talq.SearchFeatureFeature;
+				PRODUCT_NAME = SearchFeature;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8C5D01295C2B82591704B3DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(inherited)",
+					"$(SRCROOT)/../../../Tuist/.build/checkouts/ReactorKit/Sources/ReactorKitRuntime/include",
+					"$(SRCROOT)/../../../Tuist/.build/checkouts/RxSwift/Sources/RxCocoaRuntime/include",
+				);
+				INFOPLIST_FILE = "Derived/InfoPlists/SearchFeaturePreview-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/ReactorKitRuntime/ReactorKitRuntime.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/RxCocoaRuntime/RxCocoaRuntime.modulemap",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/ReactorKitRuntime/ReactorKitRuntime.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/RxCocoaRuntime/RxCocoaRuntime.modulemap",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.talq.SearchFeaturePreview;
+				PRODUCT_NAME = SearchFeaturePreview;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A47239A433EDE1CA266C0055 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(inherited)",
+					"$(SRCROOT)/../../../Tuist/.build/checkouts/ReactorKit/Sources/ReactorKitRuntime/include",
+					"$(SRCROOT)/../../../Tuist/.build/checkouts/RxSwift/Sources/RxCocoaRuntime/include",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/ReactorKitRuntime/ReactorKitRuntime.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/RxCocoaRuntime/RxCocoaRuntime.modulemap",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/ReactorKitRuntime/ReactorKitRuntime.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/RxCocoaRuntime/RxCocoaRuntime.modulemap",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.talq.SearchFeatureTesting;
+				PRODUCT_NAME = SearchFeatureTesting;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					DEBUG,
+				);
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC433B165D0D2078E0148D7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(inherited)",
+					"$(SRCROOT)/../../../Tuist/.build/checkouts/ReactorKit/Sources/ReactorKitRuntime/include",
+					"$(SRCROOT)/../../../Tuist/.build/checkouts/RxSwift/Sources/RxCocoaRuntime/include",
+				);
+				INFOPLIST_FILE = "Derived/InfoPlists/SearchFeatureTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/ReactorKitRuntime/ReactorKitRuntime.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/RxCocoaRuntime/RxCocoaRuntime.modulemap",
+				);
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/ReactorKitRuntime/ReactorKitRuntime.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/RxCocoaRuntime/RxCocoaRuntime.modulemap",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.talq.SearchFeatureTests;
+				PRODUCT_NAME = SearchFeatureTests;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					DEBUG,
+				);
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C361C8BEB4ABC7F89E4BA25A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-Objc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0D57A1D57BEFA5C357AE71D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(inherited)",
+					"$(SRCROOT)/../../../Tuist/.build/checkouts/ReactorKit/Sources/ReactorKitRuntime/include",
+					"$(SRCROOT)/../../../Tuist/.build/checkouts/RxSwift/Sources/RxCocoaRuntime/include",
+				);
+				INFOPLIST_FILE = "Derived/InfoPlists/SearchFeatureTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/ReactorKitRuntime/ReactorKitRuntime.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/RxCocoaRuntime/RxCocoaRuntime.modulemap",
+				);
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/ReactorKitRuntime/ReactorKitRuntime.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/RxCocoaRuntime/RxCocoaRuntime.modulemap",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.talq.SearchFeatureTests;
+				PRODUCT_NAME = SearchFeatureTests;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D41361367BFF5105DBBEB39B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(inherited)",
+					"$(SRCROOT)/../../../Tuist/.build/checkouts/ReactorKit/Sources/ReactorKitRuntime/include",
+					"$(SRCROOT)/../../../Tuist/.build/checkouts/RxSwift/Sources/RxCocoaRuntime/include",
+				);
+				INFOPLIST_FILE = "Derived/InfoPlists/SearchFeatureDemoApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/ReactorKitRuntime/ReactorKitRuntime.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/RxCocoaRuntime/RxCocoaRuntime.modulemap",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/ReactorKitRuntime/ReactorKitRuntime.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/RxCocoaRuntime/RxCocoaRuntime.modulemap",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.talq.SearchFeatureDemo;
+				PRODUCT_NAME = SearchFeatureDemoApp;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					DEBUG,
+				);
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DE6EC2CA7464FDA21483680A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-Objc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E296166C3BBBA225D1BD0953 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(inherited)",
+					"$(SRCROOT)/../../../Tuist/.build/checkouts/ReactorKit/Sources/ReactorKitRuntime/include",
+					"$(SRCROOT)/../../../Tuist/.build/checkouts/RxSwift/Sources/RxCocoaRuntime/include",
+				);
+				INFOPLIST_FILE = "Derived/InfoPlists/SearchFeaturePreview-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/ReactorKitRuntime/ReactorKitRuntime.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/RxCocoaRuntime/RxCocoaRuntime.modulemap",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/ReactorKitRuntime/ReactorKitRuntime.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/RxCocoaRuntime/RxCocoaRuntime.modulemap",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.talq.SearchFeaturePreview;
+				PRODUCT_NAME = SearchFeaturePreview;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					DEBUG,
+				);
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EE6512F471CB6D6F3724F5B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(inherited)",
+					"$(SRCROOT)/../../../Tuist/.build/checkouts/ReactorKit/Sources/ReactorKitRuntime/include",
+					"$(SRCROOT)/../../../Tuist/.build/checkouts/RxSwift/Sources/RxCocoaRuntime/include",
+				);
+				INFOPLIST_FILE = "Derived/InfoPlists/SearchFeatureDemoApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/ReactorKitRuntime/ReactorKitRuntime.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/RxCocoaRuntime/RxCocoaRuntime.modulemap",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/ReactorKitRuntime/ReactorKitRuntime.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/RxCocoaRuntime/RxCocoaRuntime.modulemap",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.talq.SearchFeatureDemo;
+				PRODUCT_NAME = SearchFeatureDemoApp;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F79A015E10678F38512AE04 /* Build configuration list for PBXNativeTarget "SearchFeatureTesting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A47239A433EDE1CA266C0055 /* Debug */,
+				544767A5BDF8810B3A0C1488 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		476BC85466F7FCAE523D4166 /* Build configuration list for PBXProject "SearchFeature" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE6EC2CA7464FDA21483680A /* Debug */,
+				C361C8BEB4ABC7F89E4BA25A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A2B9227B26DDFA640D31A31 /* Build configuration list for PBXNativeTarget "SearchFeature" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58D39EAE5E3FC853926285AD /* Debug */,
+				7A5DE9E2B7BAFF7D5B3BC668 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE03D0D7BDFA41872880DB75 /* Build configuration list for PBXNativeTarget "SearchFeatureInterface" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EDA3E04E37D93D6B39C7895 /* Debug */,
+				44731320D2881C5C3869FBBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBA5EBD7A7B9BD5E80421E7A /* Build configuration list for PBXNativeTarget "SearchFeatureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC433B165D0D2078E0148D7C /* Debug */,
+				D0D57A1D57BEFA5C357AE71D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D702818F6DF11277D2D21287 /* Build configuration list for PBXNativeTarget "SearchFeaturePreview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E296166C3BBBA225D1BD0953 /* Debug */,
+				8C5D01295C2B82591704B3DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F48C1BACC010DC5EC1ACFFB7 /* Build configuration list for PBXNativeTarget "SearchFeatureDemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D41361367BFF5105DBBEB39B /* Debug */,
+				EE6512F471CB6D6F3724F5B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18910CC078D3CEC08DF9A12B /* Project object */;
+}

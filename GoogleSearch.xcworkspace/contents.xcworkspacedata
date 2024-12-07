@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:Projects"
+      name = "Projects">
+      <Group
+         location = "group:Core"
+         name = "Core">
+         <FileRef
+            location = "group:UserAPICore/UserAPICore.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Domain"
+         name = "Domain">
+         <FileRef
+            location = "group:SearchListDomain/SearchListDomain.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Feature"
+         name = "Feature">
+         <FileRef
+            location = "group:SearchFeature/SearchFeature.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Shared"
+         name = "Shared">
+         <FileRef
+            location = "group:DesignSystem/DesignSystem.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:FoundationShared/FoundationShared.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:ReactiveXShared/ReactiveXShared.xcodeproj">
+         </FileRef>
+      </Group>
+   </Group>
+   <Group
+      location = "container:"
+      name = "Dependencies">
+      <FileRef
+         location = "group:Tuist/.build/tuist-derived/Alamofire/Alamofire.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Tuist/.build/tuist-derived/Fakery/Fakery.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Tuist/.build/tuist-derived/Moya/Moya.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Tuist/.build/tuist-derived/ReactorKit/ReactorKit.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Tuist/.build/tuist-derived/RxSwift/RxSwift.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Tuist/.build/tuist-derived/SnapKit/SnapKit.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Tuist/.build/tuist-derived/Swinject/Swinject.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Tuist/.build/tuist-derived/WeakMapTable/WeakMapTable.xcodeproj">
+      </FileRef>
+   </Group>
+</Workspace>
