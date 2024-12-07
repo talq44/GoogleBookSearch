@@ -10,13 +10,12 @@ import Foundation
 import UserAPICoreInterface
 
 extension UserAPICoreImpl: UserAPICoreInterface.UserAPIProtocol {
-    public func get_search_users(
-        header: SearchHeaderDTO,
-        request: SearchRequestDTO
-    ) async throws -> SearchResponseDTO {
+    public func get_books(
+        request: UserAPICoreInterface.GetBooksRequestDTO
+    ) async throws -> UserAPICoreInterface.GoogleBooksResponse {
         return try await self.requestJson(
-            .get_search_users(header: header, request: request),
-            type: SearchResponseDTO.self
+            .get_books_volumes(request: request),
+            type: GoogleBooksResponse.self
         )
     }
 }

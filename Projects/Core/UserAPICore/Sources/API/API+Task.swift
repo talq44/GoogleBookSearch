@@ -14,7 +14,10 @@ import Moya
 extension API {
     public var task: Task {
         switch self {
-        case let .get_search_users(_, request):
+        case .health_check:
+            return .requestData(Data())
+            
+        case .get_books_volumes(let request):
             return .requestParameters(
                 parameters: request.parameters(),
                 encoding: URLEncoding.queryString

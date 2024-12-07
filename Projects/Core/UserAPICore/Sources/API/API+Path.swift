@@ -10,8 +10,10 @@ import Foundation
 extension API {
     public var path: String {
         switch self {
-        case .get_search_users:
+        case .health_check:
             return "/search/users"
+        case .get_books_volumes:
+            return "/books/v1/volumes"
         }
     }
 }
