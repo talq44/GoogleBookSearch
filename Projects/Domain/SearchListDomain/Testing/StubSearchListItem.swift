@@ -12,19 +12,19 @@ import SearchListDomainInterface
 import Fakery
 
 struct StubSearchListItem: SearchListItem {
-    var id: Int
-    var login: String
-    var nodeId: String
-    var avatarUrl: String
+    var id: String
+    var title: String
+    var thumbnail: String
+    var authors: String
     
-    static func mock(id: Int) -> Self {
+    static func mock(id: String) -> Self {
         let fake = Faker()
         
         return StubSearchListItem(
             id: id,
-            login: fake.name.firstName(),
-            nodeId: "\(fake.number.increasingUniqueId())",
-            avatarUrl: fake.internet.image()
+            title: fake.commerce.productName(),
+            thumbnail: fake.internet.image(),
+            authors: fake.name.firstName()
         )
     }
 }
