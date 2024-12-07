@@ -18,7 +18,7 @@ final class UserAPIProtocolTests: XCTestCase {
 
     func test_given_검색어입력_when_request_list_then_결과돌려줌() async throws {
         // given
-        let q = "검색"
+        let q = "intitle:검색"
         let request = GetBooksRequestDTO(
             q: q,
             startIndex: 0,

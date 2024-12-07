@@ -110,7 +110,7 @@ final class SearchListDomainTests: XCTestCase {
         }
     }
     
-    func test_given_term_empty_when_execute_more_then_error() async throws {
+    func test_given_term_empty_when_execute_more_then_empty() async throws {
         // given
         let term: String = ""
         self.repository.setUp(isError: false)
@@ -131,30 +131,6 @@ final class SearchListDomainTests: XCTestCase {
             
         case .failure:
             XCTFail("검색어가 없다면 빈 배열이 돌아옵니다.")
-        }
-    }
-    
-    func test_given_term_email_when_execute_more_then_error() async throws {
-        // given
-        let term: String = "test@test.com"
-        self.repository.setUp(isError: false)
-        
-        // when
-        let response = await self.sut.execute(SearchListInputImpl(
-            query: term,
-            isMore: false
-        ))
-        
-        // then
-        switch response {
-        case .success(let success):
-            XCTAssertTrue(
-                success.items.count == 0,
-                "검색어가 이름 형식이 아니라면 빈 배열이 돌아옵니다."
-            )
-            
-        case .failure:
-            XCTFail("검색어가 이름 형식이 아니라면 빈 배열이 돌아옵니다.")
         }
     }
 }

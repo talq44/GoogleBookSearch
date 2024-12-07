@@ -194,12 +194,12 @@ extension SearchViewReactor {
     private func toViewState(
         response: SearchListOutput
     ) -> [SearchViewItem] {
-        return response.items.map {
+        return response.items.map { _ in
             return SearchViewItem(
-                id: $0.id,
-                name: $0.login,
-                imageURL: $0.avatarUrl,
-                isBookmarked: self.bookMarkIds.contains($0.id)
+                id: 1,
+                name: "$0.login",
+                imageURL: "$0.avatarUrl",
+                isBookmarked: false
             )
         }
     }

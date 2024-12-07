@@ -20,4 +20,6 @@ public struct GoogleBookItem: Codable {
     public let selfLink: String
     /// 책의 세부 정보
     public let volumeInfo: VolumeInfo
+    /// 이미지 링크 (썸네일 등)
+    public let imageLinks: ImageLinksDTO?
 }

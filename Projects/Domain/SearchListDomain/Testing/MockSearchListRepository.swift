@@ -25,7 +25,7 @@ final class MockSearchListRepository: SearchListRepository {
         }
         
         let items: [StubSearchListItem] = Array(1...itemCount).map { index in
-            return StubSearchListItem.mock(id: index)
+            return StubSearchListItem.mock(id: "\(index)")
         }
         
         return .success(StubSearchListResponse(

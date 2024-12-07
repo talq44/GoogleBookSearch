@@ -17,13 +17,6 @@ let project = Project.module(
             dependencies: [
                 .shared(target: .DesignSystem, type: .implementation),
             ]
-        ),
-        .preview(
-            shared: .DesignSystem,
-            dependencies: [
-                .SPM.fakery,
-                .shared(target: .DesignSystem, type: .implementation),
-            ]
         )
     ]
 )
