@@ -27,17 +27,20 @@ final class FakeSearchListUseCase: SearchListUseCase {
 }
 
 struct SearchListItemImpl: SearchListDomainInterface.SearchListItem {
-    var id: Int
-    var login: String
-    var nodeId: String
-    var avatarUrl: String
+    var id: String
+    
+    var title: String
+    
+    var thumbnail: String
+    
+    var authors: String
     
     static func mock(id: Int) -> Self {
         SearchListItemImpl(
-            id: id,
-            login: "login_\(id)",
-            nodeId: "nodeId_\(id)",
-            avatarUrl: "avatarUrl_\(id)"
+            id: "\(id)",
+            title: "login_\(id)",
+            thumbnail: "nodeId_\(id)",
+            authors: "avatarUrl_\(id)"
         )
     }
 }
