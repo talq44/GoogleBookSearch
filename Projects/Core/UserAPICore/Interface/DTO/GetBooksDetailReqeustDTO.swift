@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct BooksDetailReqeustDTO: Encodable {
+public struct GetBooksDetailReqeustDTO: Encodable {
     public let volumeId: String
     public init(volumeId: String) {
         self.volumeId = volumeId
