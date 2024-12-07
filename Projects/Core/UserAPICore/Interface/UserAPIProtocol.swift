@@ -11,4 +11,8 @@ public protocol UserAPIProtocol {
     func get_books(
         request: GetBooksRequestDTO
     ) async throws -> GoogleBooksResponse
+    
+    func get_books_$volumeId(
+        request: GetBooksDetailReqeustDTO
+    ) async throws -> GoogleBookDetailResponse
 }
