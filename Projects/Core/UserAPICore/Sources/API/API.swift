@@ -14,6 +14,7 @@ import Moya
 public enum API {
     case health_check
     case get_books_volumes(request: GetBooksRequestDTO)
+    case get_books_volumes_detail(request: GetBooksDetailReqeustDTO)
 }
 
 extension API: Moya.TargetType {

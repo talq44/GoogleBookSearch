@@ -18,4 +18,13 @@ extension UserAPICoreImpl: UserAPICoreInterface.UserAPIProtocol {
             type: GoogleBooksResponse.self
         )
     }
+    
+    public func get_books_$volumeId(
+        request: GetBooksDetailReqeustDTO
+    ) async throws -> GoogleBookDetailResponse {
+        return try await self.requestJson(
+            .get_books_volumes_detail(request: request),
+            type: GoogleBookDetailResponse.self
+        )
+    }
 }

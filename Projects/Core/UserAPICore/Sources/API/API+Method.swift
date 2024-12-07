@@ -16,6 +16,8 @@ extension API {
             return .get
         case .get_books_volumes:
             return .get
+        case .get_books_volumes_detail:
+            return .get
         }
     }
 }

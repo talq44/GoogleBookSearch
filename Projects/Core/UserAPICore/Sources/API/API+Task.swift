@@ -22,6 +22,9 @@ extension API {
                 parameters: request.parameters(),
                 encoding: URLEncoding.queryString
             )
+            
+        case .get_books_volumes_detail:
+            return .requestPlain
         }
     }
 }
