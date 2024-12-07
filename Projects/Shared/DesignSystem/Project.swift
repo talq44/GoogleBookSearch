@@ -8,6 +8,7 @@ let project = Project.module(
         .implementation(
             shared: .DesignSystem,
             dependencies: [
+                .SPM.fakery,
                 .shared(target: .FoundationShared)
             ]
         ),
@@ -20,6 +21,7 @@ let project = Project.module(
         .preview(
             shared: .DesignSystem,
             dependencies: [
+                .SPM.fakery,
                 .shared(target: .DesignSystem, type: .implementation),
             ]
         )
